@@ -14,9 +14,10 @@
   },
   "scripts": {
     "start": "node .",
+    "heroku-postbuild": "npm run build",
     "test": "jest",
     "lint": "eslint .",
-    "build": "webpack",
+    "build": "webpack -p --progress",
     "watch": "webpack-dev-server --inline --hot"
   },
   "dependencies": {
